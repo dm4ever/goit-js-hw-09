@@ -23,3 +23,63 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  justify-content: center
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  border: 0;
+  color: white;
+}
+
+.input {
+  width: 360px;
+  height: 28px;
+}
+
+.textarea {
+  width: 360px;
+  height: 120px;
+}
+
+.label {
+  color: #2e2f42;
+}
