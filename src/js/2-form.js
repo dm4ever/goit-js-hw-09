@@ -23,14 +23,16 @@ function saveToLocalStorage() {
 
 function handleSubmit(event) {
   event.preventDefault();
+  if (emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+    alert('Усі поля форми повинні бути заповнені');
+  } else {
+    localStorage.removeItem('feedback-form-state');
 
-  localStorage.removeItem('feedback-form-state');
-
-  const formData = {
-    email: emailInput.value,
-    message: messageInput.value,
-  };
-
+    const formData = {
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+  }
   console.log(formData);
 
   form.reset();
