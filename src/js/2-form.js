@@ -32,8 +32,8 @@ function handleSubmit(event) {
       email: emailInput.value,
       message: messageInput.value,
     };
+    console.log(formData);
   }
-  console.log(formData);
 
   form.reset();
 }
