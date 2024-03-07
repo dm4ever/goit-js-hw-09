@@ -25,6 +25,7 @@ function handleSubmit(event) {
   event.preventDefault();
   if (emailInput.value.trim() === '' || messageInput.value.trim() === '') {
     alert('Усі поля форми повинні бути заповнені');
+    return;
   } else {
     localStorage.removeItem('feedback-form-state');
 
@@ -34,6 +35,5 @@ function handleSubmit(event) {
     };
     console.log(formData);
   }
-
   form.reset();
 }
